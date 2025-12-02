@@ -1,0 +1,21 @@
+header{ 
+    background-color: #E8A4B5;
+      color: #0b48f0; 
+  height: 150px;
+      padding: 0px; 
+      margin: 10px; 
+      text-align: center 
+  }
+
+
+
+
+
+  footer{ 
+    background-color: #E8A4B5;
+      color: #0b48f0; 
+     padding: 0px; 
+      margin: 08px; 
+      text-align: center 
+  }
+  
