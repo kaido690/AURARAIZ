@@ -1,0 +1,289 @@
+body{
+    background-color: #5f1e1e;
+    color: #E8A4B5;
+
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+}
+
+header{ 
+  background-color: #E8A4B5;
+    color: #0b48f0; 
+height: 150px;
+    padding: 0px; 
+    margin: 10px; 
+    text-align: center 
+}
+
+
+
+.product-grid {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 15px;
+    max-width: 1400px; 
+    margin: 0 auto;
+}
+
+
+.main-offer {
+    grid-column: span 1;  /* logo da promoção  */
+    background-color: #a9ff0b;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 450px; 
+}
+
+.offer-content {
+    z-index: 2;
+}
+
+.main-offer h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.main-offer p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.confirm-button {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: underline;
+    font-size: 1em;
+    align-self: flex-start;
+}
+
+.main-offer-images {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1; 
+ 
+}
+
+.main-offer-images img {
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    object-fit: contain;
+}
+
+.main-offer-images .liz-bottle {
+    left: -10%; 
+    bottom: -10px;
+}
+
+.main-offer-images .celebre-bottle {
+    right: -10%;
+    bottom: -10px;
+}
+
+
+
+.small-card {
+    grid-column: span 1; 
+    background-color: white;
+    border: 1px solid #eee;
+    padding: 15px 0 0 0; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.discount-badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #5cb85c; 
+    color: white;
+    padding: 5px 8px;
+    font-size: 0.8em;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.favorite-icon {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: #999;
+    font-size: 1.5em;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.product-info {
+    padding: 0 15px 15px 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.promo-tag {
+    display: inline-block;
+    background-color: #5cb85c;
+    color: white;
+    padding: 2px 5px;
+    font-size: 0.75em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.product-name {
+    font-weight: 900;
+    font-size: 1.1em;
+    margin: 5px 0 0 0;
+}
+
+.product-description {
+    font-size: 0.9em;
+    color: #555;
+    min-height: 40px; 
+}
+
+.rating {
+    color: rgb(132, 124, 165);
+    font-size: 0.8em;
+    margin: 5px 0;
+}
+
+.original-price { /*preço antigo*/
+    text-decoration: line-through;
+    color: #963d3d;
+    font-size: 0.9em;
+    margin-bottom: 0;
+}
+
+.current-price {
+    color: #000;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.installment-info {
+    font-size: 0.8em;
+    color: #555;
+    margin-top: 2px;
+}
+
+
+.add-to-cart-button {  /*cor do icone do carinho*/
+    background-color: #a4d1d1; 
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    position: absolute; 
+    bottom: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+}
+
+.fotomeio {
+    background-color: #E8A4B5;
+    color: #0b48f0; 
+   padding: 0px; 
+    margin: 08px; 
+    text-align: center 
+}
+
+.fotoultima {
+    background-color: #ff0241;
+    color: #0b48f0; 
+   padding: 0px; 
+    margin: 08px; 
+    text-align: center }
+
+footer{ 
+    background-color: #E8A4B5;
+      color: #0b48f0; 
+     padding: 0px; 
+      margin: 08px; 
+      text-align: center 
+  }
+ 
+
+
+  /*
+
+@media (max-width: 1200px) {
+    .product-grid {
+   
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .main-offer {
+
+        grid-column: span 1;
+    }
+
+    .small-card {
+
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+       
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .main-offer {
+      
+        grid-column: span 2; 
+        min-height: 250px;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+    }
+    .main-offer-images {
+        position: static;
+        flex-shrink: 0;
+        width: 150px; 
+    }
+    .main-offer-images img {
+        height: 100%;
+        position: relative;
+    }
+}
+
+
+.favorite-icon.favorited {
+    color: #ff0000; 
+    font-weight: bold;
+    transform: scale(1.1);
+    transition: all 0.2s;
+}*/
+
+
+
+  
+
