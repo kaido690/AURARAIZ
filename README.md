@@ -1,112 +1,57 @@
-/* CSS separado para AuraRaiz */
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosméticos Aura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Aura Beauty</h1>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Produtos</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
 
-body{
-    background-color: #ffffff;
-    color: #E8A4B5;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
+    <section class="hero">
+        <h2>Beleza que inspira confiança</h2>
+        <p>Cuidar de você nunca foi tão leve.</p>
+        <button>Conhecer Produtos</button>
+    </section>
 
-header{ 
-    background-color: #E8A4B5;
-    color: #0b48f0; 
-    height: 150px;
-    padding-top: 10px; 
-    text-align: center;
-}
+    <section class="produtos">
+        <h2>Nossos Cosméticos</h2>
 
-nav a{
-    color: #0b48f0;
-    font-weight: bold;
-    text-decoration: none;
-    margin: 0 10px;
-}
+        <div class="card">
+            <img src="https://via.placeholder.com/200" alt="Produto 1">
+            <h3>Hidratante Facial</h3>
+            <p>Pele macia e iluminada o dia todo.</p>
+            <button>Comprar</button>
+        </div>
 
-/* Banner com homem estilo orgânico */
-.banner{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 20px;
-    background-color: #f7e5eb;
-}
+        <div class="card">
+            <img src="https://via.placeholder.com/200" alt="Produto 2">
+            <h3>Serum Vitamin C</h3>
+            <p>Melhora a textura e brilho da pele.</p>
+            <button>Comprar</button>
+        </div>
 
-.banner img{
-    width: 320px;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    margin-right: 25px;
-}
+        <div class="card">
+            <img src="https://via.placeholder.com/200" alt="Produto 3">
+            <h3>Água Micelar</h3>
+            <p>Limpeza suave e eficaz.</p>
+            <button>Comprar</button>
+        </div>
+    </section>
 
-.banner-text{
-    max-width: 400px;
-}
-
-.banner-text h2{
-    color: #ec708f;
-    font-size: 28px;
-}
-
-.banner-text p{
-    color: #0b48f0;
-    font-size: 16px;
-}
-
-.banner-text button{
-    background-color: #ec708f;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-/* Sessão produtos */
-.produtos{
-    text-align: center;
-    padding: 40px 0;
-}
-
-.produtos h3{
-    color: #0b48f0;
-}
-
-.cards{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.card{
-    background-color: #fcebf0;
-    border-radius: 15px;
-    padding: 20px;
-    width: 200px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.card img{
-    width: 100%;
-    border-radius: 10px;
-}
-
-footer{ 
-    background-color: #ec708f;
-    color: #0b48f0; 
-    padding: 20px 0; 
-    text-align: center;
-    margin-top: 40px;
-}
-
-footer ul{
-    list-style: none;
-    padding: 0;
-}
+    <footer>
+        <p>© 2025 Aura Beauty — Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>}
 
 footer a{
     color: #0b48f0;
